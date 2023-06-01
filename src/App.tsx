@@ -7,15 +7,15 @@ import Footer from './sections/Footer.js'
 
 function App() {
   return (
-    <>
+    <div className='bg-gray-50 text-gray-800'>
       <Navbar />
-      <div className='flex flex-col gap-20 px-32 bg-gray-50 text-gray-500'>
+      <div className='flex flex-col gap-20 px-32'>
         <Intro />
         <About />
         <Resume />
       </div>
       <Footer />
-    </>
+    </div>
   )
 }
 
