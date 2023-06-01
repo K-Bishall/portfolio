@@ -1,10 +1,11 @@
 import './App.css';
+import Navbar from './sections/Navbar.js'
 
 function App() {
-
     return (
         <>
-            <div className="bg-red-50">Hello</div>
+            <Navbar/>
+            <div className="bg-red p-10">Hello</div>
         </>
     );
 }
