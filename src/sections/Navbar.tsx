@@ -14,7 +14,7 @@ const Navbar = (): ReactElement => {
   )
 
   return (
-    <nav className='w-full flex gap-10 justify-end items-center py-6 px-32 sticky top-0 z-50 border-b'>
+    <nav className='bg-gray-50 w-full flex gap-10 justify-end items-center py-6 px-32 sticky top-0 z-50'>
       {Object.entries(navItems).map((entry) => {
         const key = entry[0]
         const value = entry[1]
