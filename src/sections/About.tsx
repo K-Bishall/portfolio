@@ -3,7 +3,7 @@ import photo from '../assets/photo.jpg'
 
 const About = (): ReactElement => {
   return (
-    <div id='about' className='py-20 flex gap-10'>
+    <div id='about' className='flex gap-10'>
       <img src={photo} alt='Photo' className='w-52 h-52 rounded' />
       <div>
         <p className='text-4xl font-bold text-gray-800'>Bishal Karki</p>
