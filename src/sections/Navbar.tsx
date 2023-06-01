@@ -1,4 +1,4 @@
-import { ReactElement, useMemo, useState } from 'react'
+import { ReactElement, useEffect, useMemo, useState } from 'react'
 
 const Navbar = (): ReactElement => {
   const [currentItem, setCurrentItem] = useState('home')
@@ -12,6 +12,13 @@ const Navbar = (): ReactElement => {
     }),
     [],
   )
+
+  useEffect(() => {
+    const anchorEl = document.getElementById(currentItem)
+    if (anchorEl) {
+      anchorEl.scrollIntoView({ block: 'start', behavior: 'smooth' })
+    }
+  }, [currentItem])
 
   return (
     <nav className='bg-gray-50 w-full flex gap-10 justify-end items-center py-6 px-32 sticky top-0 z-50'>

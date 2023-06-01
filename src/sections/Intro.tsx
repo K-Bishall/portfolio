@@ -24,7 +24,6 @@ const Intro = (): ReactElement => {
 
   return (
     <div
-      id='home'
       className='bg-contain bg-no-repeat bg-right border-b flex flex-col justify-center gap-5 text-gray-500'
       style={{ height: '90vh', backgroundImage: `url(${man})` }}
     >
