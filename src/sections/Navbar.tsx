@@ -8,7 +8,7 @@ const Navbar = (): ReactElement => {
       home: 'Home',
       about: 'About',
       resume: 'Resume',
-      contact: 'Contact',
+      projects: 'Projects',
     }),
     [],
   )

@@ -22,11 +22,11 @@ const ExperienceSection = ({
   const logo = `src/assets/company-logos/${logoFile}`
 
   return (
-    <div className='flex gap-8 p-8'>
+    <div className='flex gap-8 px-8'>
       <a href={website} target='_blank'>
         <img src={logo} alt={company} className='w-60' />
       </a>
-      <div className='flex flex-col'>
+      <div>
         <h2 className='font-semibold text-2xl'>{title}</h2>
         <p className='font-semibold text-orange-500 text-lg'>{company}</p>
         <p>{period}</p>

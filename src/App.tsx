@@ -9,7 +9,7 @@ function App() {
   return (
     <div className='bg-gray-50 text-gray-800'>
       <Navbar />
-      <div className='flex flex-col gap-20 px-32'>
+      <div className='flex flex-col gap-20 px-5 md:px-10 lg:px-32'>
         <Intro />
         <About />
         <Resume />
