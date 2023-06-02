@@ -7,8 +7,8 @@ interface Props {
 
 const ProjectItem = (): ReactElement => {
   return (
-    <div className='lg:w-1/2 p-5'>
-      <div className='flex flex-col items-center gap-6 border shadow-lg'>
+    <div className='lg:w-1/2 md:px-5 py-5'>
+      <div className='flex flex-col items-center gap-6 md:border shadow-lg'>
         <img src={influencive} alt='Influencive' className='' />
 
         <div className='px-5 pb-5'>
@@ -23,7 +23,9 @@ const ProjectItem = (): ReactElement => {
             dfasd fas
           </p>
 
-          <p className='font-semibold'>Hightlights of the contribution </p>
+          <p className='font-semibold'>
+            Staff tools for campaign management, User tools in CRM, payment detection and linking
+          </p>
         </div>
       </div>
     </div>

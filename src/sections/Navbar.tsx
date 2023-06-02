@@ -32,7 +32,7 @@ const Navbar = (): ReactElement => {
   return (
     <nav
       id='nav'
-      className='bg-gray-50 w-full flex gap-10 justify-end items-center py-6 px-32 sticky top-0 z-50'
+      className='bg-gray-50 w-full flex gap-5 md:gap-10 justify-center md:justify-end items-center py-6 px-32 sticky top-0 z-50'
     >
       {Object.entries(navItems).map((entry) => {
         const key = entry[0]

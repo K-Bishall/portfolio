@@ -1,5 +1,4 @@
 import { ReactElement } from 'react'
-import man from '../assets/man.svg'
 import contacts from './data/contacts.json'
 import flag from '../assets/Nepal-Flag.svg'
 import Contacts from './Contacts.js'
@@ -7,8 +6,12 @@ import Contacts from './Contacts.js'
 const Intro = (): ReactElement => {
   return (
     <div
-      className='bg-contain bg-no-repeat bg-right border-b flex flex-col justify-center gap-5 text-gray-500'
-      style={{ height: '90vh', backgroundImage: `url(${man})` }}
+      className={
+        'bg-contain bg-no-repeat bg-right border-b flex flex-col justify-center items-center ' +
+        'md:items-start gap-5 text-gray-500 text-center md:text-left ' +
+        `md:bg-background`
+      }
+      style={{ height: '90vh' }}
     >
       <p className='text-4xl font-semibold'>Hello, I'm</p>
       <p className='text-6xl font-extrabold text-gray-600'>Bishal Karki</p>
