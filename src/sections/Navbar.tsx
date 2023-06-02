@@ -14,14 +14,26 @@ const Navbar = (): ReactElement => {
   )
 
   useEffect(() => {
-    const anchorEl = document.getElementById(currentItem)
-    if (anchorEl) {
-      anchorEl.scrollIntoView({ block: 'start', behavior: 'smooth' })
+    const element = document.getElementById(currentItem)
+    const nav = document.getElementById('nav')!
+    if (element) {
+      const elementPosition = element.getBoundingClientRect().top
+      const navheight = nav.getBoundingClientRect().height
+
+      const offsetPosition = elementPosition - document.body.getBoundingClientRect().top - navheight
+
+      window.scrollTo({
+        top: offsetPosition,
+        behavior: 'smooth',
+      })
     }
   }, [currentItem])
 
   return (
-    <nav className='bg-gray-50 w-full flex gap-10 justify-end items-center py-6 px-32 sticky top-0 z-50'>
+    <nav
+      id='nav'
+      className='bg-gray-50 w-full flex gap-10 justify-end items-center py-6 px-32 sticky top-0 z-50'
+    >
       {Object.entries(navItems).map((entry) => {
         const key = entry[0]
         const value = entry[1]

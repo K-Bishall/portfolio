@@ -1,14 +1,24 @@
 import { ReactElement } from 'react'
 import ResumeSection from './ResumeSection.js'
+import experiences from '../data/experience.json'
 import ExperienceSection from './ExperienceSection.js'
 
 const Experience = (): ReactElement => {
   return (
     <ResumeSection title='Experiences' subtitle="I've achieved so far">
       <div className='flex flex-col gap-10'>
-        <ExperienceSection />
-        <ExperienceSection />
-        <ExperienceSection />
+        {experiences.map((exp) => (
+          <ExperienceSection
+            key={exp.company}
+            title={exp.title}
+            company={exp.company}
+            logoFile={exp.logoFile}
+            website={exp.website}
+            period={exp.period}
+            location={exp.location}
+            description={exp.description}
+          />
+        ))}
       </div>
     </ResumeSection>
   )
