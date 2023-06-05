@@ -46,7 +46,7 @@ const TechStacks = (): ReactElement => {
   )
 
   return (
-    <ResumeSection title='Tech Stacks' subtitle="I've mostly worked with">
+    <ResumeSection title='Tech Stacks' subtitle="I've mostly worked with" border>
       <div className='flex flex-wrap items-center justify-center gap-10'>
         {Object.keys(techStacks).map((key) => (
           <div key={key} className='flex flex-col gap-2 items-center justify-center'>

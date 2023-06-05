@@ -3,7 +3,7 @@ import { ReactElement } from 'react'
 const Footer = (): ReactElement => {
   const year = new Date().getFullYear()
   return (
-    <div className='mt-10 bg-orange-500 p-4'>
+    <div className='mt-10 p-4 bg-gray-800'>
       <p className='text-center text-white font-medium'>&#169; Bishal Karki, {year}</p>
     </div>
   )

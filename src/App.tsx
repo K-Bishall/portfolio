@@ -4,6 +4,7 @@ import Intro from './sections/Intro.js'
 import About from './sections/About.js'
 import Resume from './sections/resume/Resume.js'
 import Footer from './sections/Footer.js'
+import ContactBar from './sections/ContactBar.js'
 
 function App() {
   return (
@@ -13,6 +14,7 @@ function App() {
         <Intro />
         <About />
         <Resume />
+        <ContactBar />
       </div>
       <Footer />
     </div>

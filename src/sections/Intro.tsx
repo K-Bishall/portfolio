@@ -1,7 +1,7 @@
 import { ReactElement } from 'react'
-import contacts from './data/contacts.json'
 import flag from '../assets/Nepal-Flag.svg'
-import Contacts from './Contacts.js'
+import Contacts from './components/Contacts.js'
+import ConnectButton from './components/ConnectButton.js'
 
 const Intro = (): ReactElement => {
   return (
@@ -20,16 +20,7 @@ const Intro = (): ReactElement => {
         <span>Nepal</span> <img src={flag} alt='Flag' className='h-5' />
       </p>
 
-      <div className='my-5 flex gap-10 font-bold text-white'>
-        <a
-          href={contacts['linkedin']}
-          target='_blank'
-          className='bg-orange-500 py-3 px-8 rounded-full'
-        >
-          Connect
-        </a>
-        {/*<button className='bg-gray-500 py-3 px-8 rounded-full'>Download CV</button>*/}
-      </div>
+      <ConnectButton className='my-5'/>
 
       <Contacts />
     </div>

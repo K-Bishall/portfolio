@@ -1,6 +1,6 @@
 import { useMemo } from 'react'
 import { FaGithub, FaGitlab, FaLinkedinIn } from 'react-icons/fa'
-import contacts from './data/contacts.json'
+import contacts from '../data/contacts.json'
 
 const Contacts = () => {
   const contactItems = useMemo(

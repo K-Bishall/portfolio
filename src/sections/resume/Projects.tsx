@@ -5,7 +5,7 @@ import ResumeSection from './ResumeSection.js'
 const Projects = (): ReactElement => {
   return (
     <ResumeSection id='projects' title='Projects' subtitle="I've contributed to">
-      <div className='flex flex-wrap px-5 mt-10 w-full'>
+      <div className='flex flex-wrap md:px-5 mt-10 w-full'>
         <ProjectItem />
         <ProjectItem />
         <ProjectItem />

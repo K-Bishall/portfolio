@@ -5,7 +5,7 @@ import ExperienceSection from './ExperienceSection.js'
 
 const Experience = (): ReactElement => {
   return (
-    <ResumeSection title='Experiences' subtitle="I've achieved so far">
+    <ResumeSection title='Experiences' subtitle="I've achieved so far" border>
       <div className='flex flex-col gap-20'>
         {experiences.map((exp) => (
           <ExperienceSection

@@ -1,6 +1,5 @@
 import { ReactElement } from 'react'
 import photo from '../assets/photo.jpg'
-import contacts from './data/contacts.json'
 
 const About = (): ReactElement => {
   return (
@@ -20,13 +19,6 @@ const About = (): ReactElement => {
           seeking personal and professional growth, open to feedback, and dedicated to continuous
           improvement.
         </p>
-        <a
-          href={contacts['linkedin']}
-          target='_blank'
-          className='bg-orange-500 py-3 px-8 rounded-full text-white font-bold max-w-min'
-        >
-          Connect
-        </a>
       </div>
     </div>
   )

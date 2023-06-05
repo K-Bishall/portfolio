@@ -1,14 +1,10 @@
 import { ReactElement } from 'react'
 import influencive from '../../assets/projects/Influencive.png'
 
-interface Props {
-  index: number
-}
-
 const ProjectItem = (): ReactElement => {
   return (
     <div className='lg:w-1/2 md:px-5 py-5'>
-      <div className='flex flex-col items-center gap-6 md:border shadow-lg'>
+      <div className='flex flex-col items-center gap-6 shadow-lg'>
         <img src={influencive} alt='Influencive' className='' />
 
         <div className='px-5 pb-5'>
