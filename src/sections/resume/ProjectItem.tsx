@@ -1,27 +1,37 @@
 import { ReactElement } from 'react'
-import influencive from '../../assets/projects/Influencive.png'
 
-const ProjectItem = (): ReactElement => {
+interface Props {
+  projectName: string
+  imageFile: string
+  website: string
+  category: string
+  description: string
+  highlights: string
+}
+
+const ProjectItem = ({
+  projectName,
+  imageFile,
+  category,
+  highlights,
+  description,
+  website,
+}: Props): ReactElement => {
+  const image = `src/assets/projects/${imageFile}`
+
   return (
     <div className='lg:w-1/2 md:px-5 py-5'>
       <div className='flex flex-col items-center gap-6 shadow-lg'>
-        <img src={influencive} alt='Influencive' className='' />
+        <a href={website} target='_blank'>
+          <img src={image} alt={projectName} className='' />
+        </a>
 
         <div className='px-5 pb-5'>
-          <h2 className={`font-semibold text-2xl`}>Promoty</h2>
-          <p className={`text-orange-500 font-medium`}>Influencer Management Platform</p>
-          <p className='my-5'>
-            asdf asdfasd fas dfasf asdf asd fas dfasd fas asdf asfd asf asf asdf as dfas fas dfasdf
-            asd fa sfasdf asfasdf fgasgas asdfasdf as fd asdf asdfasd fas dfasf asdf asd fas dfasd
-            fas asdf asfd asf asf asdf as dfas fas dfasdf asd fa sfasdf asfasdf fgasgas asdfasdf as
-            fd asdf asdfasd fas dfasf asdf asd fas dfasd fas asdf asfd asf asf asdf as dfas fas
-            dfasdf asd fa sfasdf asfasdf fgasgas asdfasdf as fdasdf asdfasd fas dfasf asdf asd fas
-            dfasd fas
-          </p>
+          <h2 className={`font-semibold text-2xl`}>{projectName}</h2>
+          <p className={`text-orange-500 font-medium`}>{category}</p>
+          <p className='my-5'>{description}</p>
 
-          <p className='font-semibold'>
-            Staff tools for campaign management, User tools in CRM, payment detection and linking
-          </p>
+          <p className='font-semibold'>{highlights}</p>
         </div>
       </div>
     </div>
