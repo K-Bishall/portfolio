@@ -18,7 +18,7 @@ import react from '../../assets/tech-stacks/React.svg'
 import spring from '../../assets/tech-stacks/Spring.svg'
 import tailwind from '../../assets/tech-stacks/Tailwind CSS.svg'
 import typescript from '../../assets/tech-stacks/TypeScript.svg'
-import Section from './Section.js'
+import Section from '../Section.js'
 
 const TechStacks = (): ReactElement => {
   const techStacks: { [key: string]: string } = useMemo(

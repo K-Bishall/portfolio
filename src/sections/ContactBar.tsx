@@ -1,5 +1,5 @@
 import { ReactElement } from 'react'
-import ConnectButton from './components/ConnectButton.js'
+import ConnectButton from '../components/ConnectButton.js'
 
 const ContactBar = (): ReactElement => {
   return (

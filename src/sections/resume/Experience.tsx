@@ -1,6 +1,6 @@
 import { ReactElement } from 'react'
-import Section from './Section.js'
-import experiences from '../data/experience.json'
+import Section from '../Section.js'
+import experiences from '../../data/experience.json'
 import ExperienceSection from './ExperienceSection.js'
 
 const Experience = (): ReactElement => {

@@ -1,7 +1,7 @@
 import { ReactElement } from 'react'
 import flag from '../assets/Nepal-Flag.svg'
-import Contacts from './components/Contacts.js'
-import ConnectButton from './components/ConnectButton.js'
+import Contacts from '../components/Contacts.js'
+import ConnectButton from '../components/ConnectButton.js'
 
 const Intro = (): ReactElement => {
   return (

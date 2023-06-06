@@ -1,7 +1,7 @@
 import { ReactElement } from 'react'
 import ProjectItem from './ProjectItem.js'
-import Section from './Section.js'
-import projects from '../data/projects.json'
+import Section from '../Section.js'
+import projects from '../../data/projects.json'
 
 const Projects = (): ReactElement => {
   return (
