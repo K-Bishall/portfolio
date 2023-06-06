@@ -8,7 +8,7 @@ const Projects = (): ReactElement => {
     <Section id='projects' title='Projects' subtitle="I've contributed to">
       <div className='flex flex-wrap md:px-5 mt-10 w-full'>
         {projects.map((project) => (
-          <ProjectItem {...project} />
+          <ProjectItem key={project.projectName} {...project} />
         ))}
       </div>
     </Section>
