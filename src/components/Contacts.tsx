@@ -1,4 +1,5 @@
 import { useMemo } from 'react'
+// @ts-ignore
 import { FaGithub, FaGitlab, FaLinkedinIn } from 'react-icons/fa'
 import contacts from '../data/contacts.json'
 
