@@ -6,7 +6,7 @@ export default {
     ],
     theme: {
         extend: {
-            backgroundImage: {background: "url(/src/assets/man.svg)"}
+            backgroundImage: {background: "url(/src/assets/background.svg)"}
         },
     },
     plugins: [],
