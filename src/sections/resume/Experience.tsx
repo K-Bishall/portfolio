@@ -1,11 +1,11 @@
 import { ReactElement } from 'react'
-import ResumeSection from './ResumeSection.js'
+import Section from './Section.js'
 import experiences from '../data/experience.json'
 import ExperienceSection from './ExperienceSection.js'
 
 const Experience = (): ReactElement => {
   return (
-    <ResumeSection title='Experiences' subtitle="I've achieved so far" border>
+    <Section title='Experiences' subtitle="I've achieved so far" border>
       <div className='flex flex-col gap-20'>
         {experiences.map((exp) => (
           <ExperienceSection
@@ -20,7 +20,7 @@ const Experience = (): ReactElement => {
           />
         ))}
       </div>
-    </ResumeSection>
+    </Section>
   )
 }
 

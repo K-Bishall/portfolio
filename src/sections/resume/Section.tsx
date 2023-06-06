@@ -8,7 +8,7 @@ interface Props {
   children: ReactNode
 }
 
-const ResumeSection = ({ title, subtitle, id, border, children }: Props): ReactElement => {
+const Section = ({ title, subtitle, id, border, children }: Props): ReactElement => {
   return (
     <div id={id} className={'py-5 rounded-2xl ' + (border ? 'border' : 'md:border')}>
       <h2 className='text-4xl font-bold text-center'>{title}</h2>
@@ -18,4 +18,4 @@ const ResumeSection = ({ title, subtitle, id, border, children }: Props): ReactE
   )
 }
 
-export default ResumeSection
+export default Section

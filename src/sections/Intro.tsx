@@ -12,7 +12,7 @@ const Intro = (): ReactElement => {
         'md:items-start gap-5 text-gray-500 text-center md:text-left ' +
         `md:bg-background`
       }
-      style={{ height: '90vh' }}
+      style={{ height: '92vh' }}
     >
       <p className='text-4xl font-semibold'>Hello, I'm</p>
       <p className='text-6xl font-extrabold text-gray-600'>Bishal Karki</p>

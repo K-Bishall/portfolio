@@ -18,7 +18,7 @@ import react from '../../assets/tech-stacks/React.svg'
 import spring from '../../assets/tech-stacks/Spring.svg'
 import tailwind from '../../assets/tech-stacks/Tailwind CSS.svg'
 import typescript from '../../assets/tech-stacks/TypeScript.svg'
-import ResumeSection from './ResumeSection.js'
+import Section from './Section.js'
 
 const TechStacks = (): ReactElement => {
   const techStacks: { [key: string]: string } = useMemo(
@@ -46,7 +46,7 @@ const TechStacks = (): ReactElement => {
   )
 
   return (
-    <ResumeSection title='Tech Stacks' subtitle="I've mostly worked with" border>
+    <Section title='Tech Stacks' subtitle="I've mostly worked with" border>
       <div className='flex flex-wrap items-center justify-center gap-10'>
         {Object.keys(techStacks).map((key) => (
           <div key={key} className='flex flex-col gap-2 items-center justify-center'>
@@ -55,7 +55,7 @@ const TechStacks = (): ReactElement => {
           </div>
         ))}
       </div>
-    </ResumeSection>
+    </Section>
   )
 }
 
