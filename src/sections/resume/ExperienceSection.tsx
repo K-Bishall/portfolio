@@ -19,7 +19,7 @@ const ExperienceSection = ({
   location,
   description,
 }: Props): ReactElement => {
-  const logo = `src/assets/company-logos/${logoFile}`
+  const logo = new URL(`../../assets/company-logos/${logoFile}`, import.meta.url).href
 
   return (
     <div className='flex flex-col items-center md:flex-row md:items-start gap-8 px-8'>

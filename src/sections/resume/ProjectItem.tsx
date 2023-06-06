@@ -17,7 +17,7 @@ const ProjectItem = ({
   description,
   website,
 }: Props): ReactElement => {
-  const image = `src/assets/projects/${imageFile}`
+  const image = new URL(`../../assets/projects/${imageFile}`, import.meta.url).href
 
   return (
     <div className='lg:w-1/2 md:px-5 py-5'>
