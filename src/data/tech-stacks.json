@@ -1,0 +1,74 @@
+[
+  {
+    "name": "Kotlin",
+    "imageFile": "Kotlin.svg"
+  },
+  {
+    "name": "Spring Boot",
+    "imageFile": "Spring.svg"
+  },
+  {
+    "name": "Javascript",
+    "imageFile": "Javascript.svg"
+  },
+  {
+    "name": "Typescript",
+    "imageFile": "Typescript.svg"
+  },
+  {
+    "name": "Nodejs",
+    "imageFile": "Nodejs.svg"
+  },
+  {
+    "name": "Python",
+    "imageFile": "Python.svg"
+  },
+  {
+    "name": "Flask",
+    "imageFile": "Flask.svg"
+  },
+  {
+    "name": "Django",
+    "imageFile": "Django.svg"
+  },
+  {
+    "name": "PostgreSQL",
+    "imageFile": "PostgreSQL.svg"
+  },
+  {
+    "name": "Docker",
+    "imageFile": "Docker.svg"
+  },
+  {
+    "name": "AWS",
+    "imageFile": "AWS.svg"
+  },
+  {
+    "name": "GCP",
+    "imageFile": "Google Cloud.svg"
+  },
+  {
+    "name": "Elastic Search",
+    "imageFile": "Elastic Search.svg"
+  },
+  {
+    "name": "React",
+    "imageFile": "React.svg"
+  },
+  {
+    "name": "Tailwind",
+    "imageFile": "Tailwind CSS.svg"
+  },
+  {
+    "name": "Git",
+    "imageFile": "Git.svg"
+  },
+  {
+    "name": "Intellij",
+    "imageFile": "IntelliJ IDEA.svg"
+  },
+  {
+    "name": "Pycharm",
+    "imageFile": "PyCharm.svg"
+  }
+]
